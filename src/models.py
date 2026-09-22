@@ -1,7 +1,7 @@
 """Data models for Salesforce support case triage and escalation tracking."""
 
 from dataclasses import dataclass, field
-from datetime import datetime
+from datetime import datetime, timezone
 from enum import Enum
 from typing import List, Optional, Dict, Any
 
@@ -51,7 +51,7 @@ class SupportCase:
     escalation_reason: Optional[str] = None
     suggested_steps: List[str] = field(default_factory=list)
     voice_metadata: Optional[Dict[str, Any]] = None
-    created_at: str = field(default_factory=lambda: datetime.utcnow().isoformat())
+    created_at: str = field(default_factory=lambda: datetime.now(timezone.utc).isoformat())
     sla_target_minutes: int = 240
     status: str = "New"
 
