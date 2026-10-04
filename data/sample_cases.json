@@ -1,0 +1,50 @@
+[
+  {
+    "case_id": "SF-10491",
+    "subject": "User locked out after MFA configuration update",
+    "description": "User cannot login and received insufficient_access_on_cross_reference_entity when accessing Account records. Org ID: 00D5g000004XYZ9 on NA142 instance. Urgent as sales team needs access.",
+    "channel": "Web Portal",
+    "customer_org_id": "00D5g000004XYZ9",
+    "customer_tier": "Premier"
+  },
+  {
+    "case_id": "SF-10492",
+    "subject": "Bulk API upload failing with FIELD_CUSTOM_VALIDATION_EXCEPTION",
+    "description": "Data loader failed during bulk upsert of 15,000 lead records. Getting error FIELD_CUSTOM_VALIDATION_EXCEPTION on lead status change. Production deployment blocked.",
+    "channel": "Email",
+    "customer_org_id": "00D80000001ABCD",
+    "customer_tier": "Signature"
+  },
+  {
+    "case_id": "SF-10493",
+    "subject": "Executive quarterly sales dashboard failing scheduled refresh",
+    "description": "Matrix report summary formula error in VP sales dashboard. Scheduled refresh emails stopped firing yesterday. Requesting feature guidance and best practice.",
+    "channel": "Web Portal",
+    "customer_org_id": "00D20000005EFGH",
+    "customer_tier": "Standard"
+  },
+  {
+    "case_id": "SF-10494",
+    "subject": "System.LimitException: 101 SOQL queries in OpportunityTrigger",
+    "description": "Customer says custom trigger is throwing System.LimitException: Too many SOQL queries: 101 in custom code OpportunityHandler. Need someone to rewrite apex trigger.",
+    "channel": "Web Portal",
+    "customer_org_id": "00D90000009IJKL",
+    "customer_tier": "Standard"
+  },
+  {
+    "case_id": "SF-10495",
+    "subject": "Need 30 additional Salesforce Enterprise user licenses for onboarding",
+    "description": "Customer reached user license limit and is out of licenses. Needs to purchase licenses immediately for new EMEA sales hire cohort.",
+    "channel": "Email",
+    "customer_org_id": "00D40000002MNOP",
+    "customer_tier": "Premier"
+  },
+  {
+    "case_id": "SF-10496",
+    "subject": "Inbound Voice Call: SSO SAML certificate expired",
+    "description": "Caller: David Miller\nEmail: dmiller@acmecorp.com\nPhone: +1-415-555-0199\nCustomer Org ID 00D5g000004XYZ9 (NA142).\nAll users locked out across company after Okta IdP certificate rollover. Production down!",
+    "channel": "Voice",
+    "customer_org_id": "00D5g000004XYZ9",
+    "customer_tier": "Signature"
+  }
+]
